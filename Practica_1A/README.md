@@ -12,17 +12,18 @@ Al final de la plantilla encontrará algunos ejemplos para enriquecer su informe
 - Si emplea referencias disponibles en línea, agregue los hipervínculos respectivos.  
 
 ---
-# Práctica 1: TÍTULO PRÁCTICA
+# Práctica 1A: GNU Radio para el procesamiento de señales.
+
 
 ### Integrantes
-- **PRIMER INTEGRANTE** - Código
-- **SEGUNDO INTEGRANTE** - Código
+- **Maria Fernanda Guerrero Santos** - 2202343
+- **Michelle Grazón Campos** - 2202785
 
 Escuela de Ingenierías Eléctrica, Electrónica y de Telecomunicaciones  
 Universidad Industrial de Santander
 
 ### Fecha
-31 de diciembre de 2030
+25 de Enero 2025
 
 ---
 
@@ -31,7 +32,7 @@ Los autores de este informe certifican que el contenido aquí presentado es orig
 
 Asimismo, los autores asumen plena responsabilidad por la información contenida en este documento. 
 
-Uso de IA: [Indicar si se usó IA y para qué aspectos específicos, por ejemplo: "Se utilizó ChatGPT para reformular secciones del texto y verificar gramática, pero el contenido técnico fue desarrollado íntegramente por los autores."]
+Uso de IA: Se utilizó ChatGPT para reformular secciones del texto y verificar gramática, pero el contenido técnico fue desarrollado íntegramente por los autores.
 
 ---
 ## Contenido
@@ -39,7 +40,7 @@ Uso de IA: [Indicar si se usó IA y para qué aspectos específicos, por ejemplo
 ### Resumen
 Descripción en no más de 150 palabras del contenido de la práctica. Debe ser conciso y brindar una idea clara sobre el trabajo realizado y sus conclusiones.
 
-**Palabras clave:** de 2 a 5 palabras clave. 
+**Palabras clave:** Señales, GNU Radio. 
 
 ### Introducción
 Cada práctica contará con preguntas orientadoras para la elaboración de la introducción. Por ejemplo: 
