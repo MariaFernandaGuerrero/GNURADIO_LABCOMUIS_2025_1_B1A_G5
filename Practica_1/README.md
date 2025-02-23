@@ -4,14 +4,14 @@
 # Práctica 1: TÍTULO PRÁCTICA
 
 ### Integrantes
-- **PRIMER INTEGRANTE** - Código
-- **SEGUNDO INTEGRANTE** - Código
+- **Maria Fernanda Guerrero Santos** - 2202343
+- **Michelle Garzón Campos** - 2202785
 
 Escuela de Ingenierías Eléctrica, Electrónica y de Telecomunicaciones  
 Universidad Industrial de Santander
 
 ### Fecha
-31 de diciembre de 2030
+25 de Febrero 2025
 
 ---
 
