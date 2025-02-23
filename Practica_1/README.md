@@ -37,7 +37,10 @@ El laboratorio de comunicaciones requiere conocimientos en diferentes programas 
 En la primera parte, se hizo una práctica con GNU radio, donde se generaron bloques de señales fuente, cuyos parámetros son controlados por variables generadas por el mismo usuario, que pueden ser modificados, además de realizar diferentes interconexiones que alteran su comportamiento, y finalmente comparando los efectos de onda al variar la relación samp_rate/freq. Se obtuvieron los resultados esperados al comparar con la señal objetivo. En la segunda práctica, además del programa usado anteriormente, se usó el generador de señales SDR conectado al osciloscopio, con el objetivo de medir la ganancia que se presentaba entre la señal de entrada y de la salida, donde se obtuvieron algunas variaciones respecto a los resultados deseados, probablemente debido a distorsiones en la señal del cable o en los instrumentos usados. Luego, usando un analizador de espectros con un atenuador, se midió la ganancia variando los parámetros de frecuencia de operación y ganancia del transmisor, y finalmente se graficó la respuesta en frecuencia del cable, donde se observó un comportamiento decreciente a medida que aumenta la frecuencia.
 
 ### Conclusiones
-Se sintetizan los principales aportes y puntos relevantes de la práctica, evitando repetir lo ya consignado en las otras secciones del informe. 
+-	El software GNU radio permite controlar el comportamiento de las señales de entrada, además de la ganancia que se generará.
+-	Los instrumentos de medición están sometidos a diferentes condiciones que pueden afectar su exactitud, como la frecuencia en la que están trabajando o la relación señal/ruido que se presenta en la entrada. Es necesario tener esto en cuenta al momento de trabajar con los mismos.
+-	Se pueden usar diferentes equipos para medir algunos parámetros importantes de las señales. El equipo que se elige depende de qué comportamiento se espera de la señal y del criterio específico que sea requerido.
+-	La forma de trabajar los datos y las aproximaciones en las mediciones es un factor significativo de la calidad y la exactitud de las señales analizadas 
 
 ### Referencias
 Ejemplo de referencia:
