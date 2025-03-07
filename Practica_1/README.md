@@ -38,6 +38,9 @@ En la primera parte, se hizo una práctica con GNU radio, donde se generaron bl
 
 En la segunda práctica, además del programa usado anteriormente, se usó el generador de señales SDR conectado al osciloscopio, con el objetivo de medir la ganancia que se presentaba entre la señal de entrada y de la salida, donde se obtuvieron algunas variaciones respecto a los resultados deseados, probablemente debido a distorsiones en la señal del cable o en los instrumentos usados. Luego, usando un analizador de espectros con un atenuador, se midió la ganancia variando los parámetros de frecuencia de operación y ganancia del transmisor, y finalmente se graficó la respuesta en frecuencia del cable, donde se observó un comportamiento decreciente a medida que aumenta la frecuencia.
 
+### 1B
+![Networking](my%20file/tabla1.png) ![Networking](my%20file/tabla2.png) ![Networking](my%20file/tabla3.png)
+
 ### Conclusiones
 -	El software GNU radio permite controlar el comportamiento de las señales de entrada, además de la ganancia que se generará.
 -	Los instrumentos de medición están sometidos a diferentes condiciones que pueden afectar su exactitud, como la frecuencia en la que están trabajando o la relación señal/ruido que se presenta en la entrada. Es necesario tener esto en cuenta al momento de trabajar con los mismos.
