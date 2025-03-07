@@ -37,27 +37,27 @@ El laboratorio de comunicaciones requiere conocimientos en diferentes programas 
 En la primera parte, se hizo una práctica con GNU radio, donde se generaron bloques de señales fuente, cuyos parámetros son controlados por variables generadas por el mismo usuario, además de realizar diferentes interconexiones que alteran su comportamiento. Se compiló el código y se guardó como evidencia.
 Después, se generó una señal senoidal con ciertas condiciones de frecuencia, la cual se representa en tiempo y frecuencia de la siguiente manera.
 
-![Networking](img1.png)
+![Networking](img1.jpg)
 
 Luego se cambió la forma de la señal a una triangular, su frecuencia y la forma de los datos a una salida real, lo cual nos da como resultado la siguiente figura:
 
-![Networking](img2.png)
+![Networking](img2.jpg)
 
 Para evaluar el teorema de Nyquist, se hicieron las comparaciones con diferentes relaciones de muestreo. En primer lugar, con el límite del teorema de Nyquist, n=2:
 
-![Networking](img3.png)
+![Networking](img3.jpg)
 
 Luego se hizo la prueba con relación de muestreo n=5, lo cual nos da como resultado el siguiente comportamiento:
 
-![Networking](img4.png)
+![Networking](img4.jpg)
 
 Además, se hizo la medición con una cantidad 10 veces superior de relaciones de muestreo (n=20) 
 
-![Networking](img5.png)
+![Networking](img5.jpg)
 
 Para verificar el impacto, se hizo el experimento de trabajar con un número de relaciones de muestreo que no fuera entero, en este caso 13.333
 
-![Networking](img6.png)
+![Networking](img6.jpg)
 
 ####Segunda parte
 
