@@ -63,86 +63,68 @@ Para verificar el impacto, se hizo el experimento de trabajar con un número de 
 
 En la segunda práctica, además del programa usado anteriormente, se hizo la conexión del generador de señales SDR con el osciloscopio, con el objetivo de medir la relación entre la amplitud generada y la medida por el osciloscopio, lo cual dio los siguientes resultados, con una frecuencia de 200 MHz y una GTX de 30
 
+| Amp. Generada | Amp. Medida[m] | Relación Pout/Pin | Ganancia Medida|
+|---------------|----------------|-------------------|----------------|
+| 0,50 |	95,55 |	191.10 |	22.813 |
+| 0,25 |	49,49 |	197.96 |	22.965 |
+| 0,13 |	25,97 |	207.76 |	23.176 |
+| 0,06 |	14,70 |	235.2 |	23.714 |
 
+Luego, manteniendo la GTX en 30, pero variando la frecuencia a 300 MHz, se obtuvieron los siguientes resultados
 
-### 1B
-![Networking](tabla1.png) ![Networking](tabla2.png) ![Networking](tabla3.png)
+| Amp. Generada | Amp. Medida[m] | Relación Pout/Pin | Ganancia Medida|
+|---------------|----------------|-------------------|----------------|
+| 0,50	| 49 |	98 |	19.912 |
+| 0,25	| 26 |	103.88 |	20.165 |
+| 0,13 | 13	| 104.752 |	20.202 |
+| 0,06 |	8	| 123.872	| 20.930 |
 
-![Networking](potencia_tabla.png) <img src="Potencia_recibida.png" alt="Potencia_recibida.png" width="400">
+Se varió una vez más la frecuencia a la de 400 MHz, lo cual generó las siguientes relaciones
 
-![Networking](atenuacion_tabla.png) <img src="atenuacion.png" alt="atenuacion.png" width="450">
+| Amp. Generada | Amp. Medida[m] | Relación Pout/Pin | Ganancia Medida|
+|---------------|----------------|-------------------|----------------|
+| 0,50 |	37 |	74.088 |	18.697 |
+| 0,25 |	19 |	76.048 |	18.811 |
+| 0,13 |	9 |	73.696 |	18.674 |
+| 0,06 |	5 |	85.904 |	19.340 |
 
-### 1C
+Luego, manteniendo constante una amplitud, y variando las frecuencias, y las ganancias GTX, se obtuvieron los siguientes resultados:
 
+![Networking](potencia_tabla.png) 
+
+Lo cual, visto gráficamente, tiene la siguiente forma:
+
+<img src="Potencia_recibida.png" alt="Potencia_recibida.png" width="400">
+
+Puede observarse que, a medida que se aumenta el GTX, aumenta la potencia RX, que tiende a aumentar, pero de forma más ligera, a medida que aumenta la frecuencia.
+Respecto a los resultados de atenuación del cable, se obtuvo la siguiente tabla
+
+![Networking](atenuacion_tabla.png) 
+
+Al ser vista esta relación de forma gráfica, se observa este comportamiento
+
+<img src="atenuacion.png" alt="atenuacion.png" width="450">
+
+Esta gráfica nos muestra que, en general, se presenta una mayor atenuación a medida que aumenta la ganancia, y a medida que aumenta la frecuencia.
+Finalmente, la potencia del transmisor en dBm, es de -98.07 dBm. Para hallarla, se registró con un cable muy corto, con una ganancia=0 y sin el atenuador. 
+
+#### Tercera parte
+Se comenzó haciendo modificaciones al flujograma suministrado, habilitando o deshabilitando bloques para poder trabajar con el USRP. Se varió el parámetro inicial de samp_rate de 20KHz a 10 KHz, y posteriormente a 1MHz
 
 
 ### Conclusiones
--	El software GNU radio permite controlar el comportamiento de las señales de entrada, además de la ganancia que se generará.
--	Los instrumentos de medición están sometidos a diferentes condiciones que pueden afectar su exactitud, como la frecuencia en la que están trabajando o la relación señal/ruido que se presenta en la entrada. Es necesario tener esto en cuenta al momento de trabajar con los mismos.
--	Se pueden usar diferentes equipos para medir algunos parámetros importantes de las señales. El equipo que se elige depende de qué comportamiento se espera de la señal y del criterio específico que sea requerido.
--	La forma de trabajar los datos y las aproximaciones en las mediciones es un factor significativo de la calidad y la exactitud de las señales analizadas 
+
+-	El software GNU radio permite controlar el comportamiento de las señales de entrada, además de la ganancia que se generará.
+-	Los instrumentos de medición están sometidos a diferentes condiciones que pueden afectar su exactitud, como la frecuencia en la que están trabajando o la relación señal/ruido que se presenta en la entrada. Es necesario tener esto en cuenta al momento de trabajar con los mismos.
+-	Se pueden usar diferentes equipos para medir algunos parámetros importantes de las señales. El equipo que se elige depende de qué comportamiento se espera de la señal y del criterio específico que sea requerido.
+-	Las señales de radio permiten transmitir datos de forma confiable a largas distancias, aunque es importante verificar que la cantidad de ruido en la señal no sea demasiado alta para evitar distorsiones.
+-	La forma de trabajar los datos y las aproximaciones en las mediciones es un factor significativo de la calidad y la exactitud de las señales analizadas.
+
 
 ### Referencias
 Ejemplo de referencia:
 
 - [Proakis, 2014] J. Proakis, M. Salehi. Fundamentals of communication systems. 2 ed. England: Pearson Education Limited, 2014. p. 164-165, 346. Chapter 5 In: [Biblioteca UIS](https://uis.primo.exlibrisgroup.com/permalink/57UIDS_INST/63p0of/cdi_askewsholts_vlebooks_9781292015699)
 
----
-# Ejemplos usando Markdown
-
-Volver al [INICIO](#laboratorio-de-comunicaciones)
-
-## Inclusión de Imágenes
-### Imagen de referencia dentro del repositorio:
-![Networking](my%20file/test.png)
-
-### Imagen de fuente externa
-![GNU Radio logo](https://kb.ettus.com/images/thumb/5/50/gnuradio.png/600px-gnuradio.png)
-
-### Uso de html para cambiar escala de la imagen
-<img src="https://kb.ettus.com/images/thumb/5/50/gnuradio.png/600px-gnuradio.png" alt="GNU Radio Logo" width="300">
-
-## Creación de hipevínculos 
-- [Aprende Markdown](https://markdown.es/)
-- [Más acerca de Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-- [Abrir documento en el repositorio](my%20file/test_file.txt). Si hay espacios en la ruta de su archivo, reemplácelos por `%20`.
-- Ir a una sección de este documento. Por ejemplo: [Ir a Contenido](#contenido) Tenga en cuenta escribir el título de la sección en minúsculas y los espacios reemplazarlos por guiones.
-## Uso de Expresiones Matemáticas
-Se pueden incluir ecuaciones en el archivo `README.md` utilizando sintaxis similar a [LaTeX](https://manualdelatex.com/tutoriales/ecuaciones):
-
-### Ecuaciones en Línea
-```
-La energía de una señal exponencial es $E = \int_0^\infty A^2 e^{-2t/\tau} dt$.
-```
-**Salida renderizada:**
-La energía de una señal exponencial es $E = \int_0^\infty A^2 e^{-2t/\tau} dt$.
-
-### Ecuaciones en Bloque
-```
-$$E = \int_0^\infty A^2 e^{-2t/\tau} dt = \frac{A^2 \tau}{2}$$
-```
-**Salida renderizada**
-$$E = \int_0^\infty A^2 e^{-2t/\tau} dt = \frac{A^2 \tau}{2}$$
-
-## Creación de Tablas
-
-**Tabla 1.** Ejemplo de tabla en Markdown.
-
-| Parámetro | Valor |
-|-----------|-------|
-| Frecuencia (Hz) | 1000 |
-| Amplitud (V) | 5 |
-| Ciclo útil (%) | 50 |
-
-## Inclusión de código
-
-```python
-def hello_world():
-    print("Hello, World!")
-```
-
-También es posible resaltar texto tipo código como `print("Hello, World!")`.
-
----
 
 Volver al [INICIO](#laboratorio-de-comunicaciones)
