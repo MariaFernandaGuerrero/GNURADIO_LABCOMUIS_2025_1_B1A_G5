@@ -45,21 +45,21 @@ Luego se cambió la forma de la señal a una triangular, su frecuencia y la form
 
 Para evaluar el teorema de Nyquist, se hicieron las comparaciones con diferentes relaciones de muestreo. En primer lugar, con el límite del teorema de Nyquist, n=2:
 
-![Networking](img3.jpg)
+![Networking](img3.png)
 
 Luego se hizo la prueba con relación de muestreo n=5, lo cual nos da como resultado el siguiente comportamiento:
 
-![Networking](img4.jpg)
+![Networking](img4.png)
 
 Además, se hizo la medición con una cantidad 10 veces superior de relaciones de muestreo (n=20) 
 
-![Networking](img5.jpg)
+![Networking](img5.png)
 
 Para verificar el impacto, se hizo el experimento de trabajar con un número de relaciones de muestreo que no fuera entero, en este caso 13.333
 
-![Networking](img6.jpg)
+![Networking](img6.png)
 
-####Segunda parte
+#### Segunda parte
 
 En la segunda práctica, además del programa usado anteriormente, se hizo la conexión del generador de señales SDR con el osciloscopio, con el objetivo de medir la relación entre la amplitud generada y la medida por el osciloscopio, lo cual dio los siguientes resultados, con una frecuencia de 200 MHz y una GTX de 30
 
