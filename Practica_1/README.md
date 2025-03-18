@@ -1,7 +1,7 @@
 # Laboratorio de Comunicaciones
 ## Universidad Industrial de Santander
 
-# Práctica 1: TÍTULO PRÁCTICA
+# Práctica 1
 
 ### Integrantes
 - **Maria Fernanda Guerrero Santos** - 2202343
