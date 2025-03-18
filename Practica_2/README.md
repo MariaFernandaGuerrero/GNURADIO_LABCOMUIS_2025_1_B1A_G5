@@ -45,16 +45,19 @@ Uso de IA: Se utilizó ChatGPT para reformular secciones del texto y verificar g
   
   
 - Usando cables coaxiales de diferentes longitudes, ¿cómo afecta la distancia entre el transmisor y el receptor a la amplitud de la señal medida?
-  El largo del cable se generan atenuaciones mas grandes y da paso a ruido.
 
-![Networking](/imagenes/coax_corto.jpg) ![Networking](/imagenes/coax_largo.jpg)
+  El largo del cable se generan atenuaciones y da paso a ruido.
+
+<img src="imagenes/coax_corto.jpg" alt="imagenes/coax_corto.jpg" width="400">  <img src="imagenes/coax_largo.jpg" alt="imagenes/coax_largo.jpg" width="400">
 
 - Usando antenas, ¿cómo afecta la distancia entre el transmisor y el receptor a la amplitud de la señal medida? ¿Es posible compensar el fenómeno?
+
   La distancia entre las antenas afecta directamente la amplitud de la señal, esto se demosytró en el laboratorio de manera un poco obvia ya que practicamente la distancia entre las antenas tuvo que ser nula para poder visualizar la señal.
 
-![Networking](/imagenes/antenas.jpg)
+<img src="imagenes/antenas.jpg" alt="imagenes/antenas.jpg" width="400">
 
 - ¿Qué modelo de canal básico describe mejor las mediciones obtenidas en la práctica?
+
   El modelo de perdida por espacio libre FRIIS, el cual describe la pérdida de señal en un enlace inalámbrico en espacio libre, relacionando la potencia recibida con la transmitida, las ganancias de las antenas, la distancia y la longitud de onda.
   
 ---
