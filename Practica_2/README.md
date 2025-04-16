@@ -22,39 +22,68 @@ Asimismo, los autores asumen plena responsabilidad por la información contenida
 
 Uso de IA: Se utilizó ChatGPT para reformular secciones del texto y verificar gramática, pero el contenido técnico fue desarrollado íntegramente por los autores.
 
-## Actividad 1: Actividades de simulación de canal en GNU Radio
+## RESUMEN
+En esta práctica se desarrolló la simulación y puesta en práctica del canal y los diferentes fenómenos que lo afectan. Se dividió en cuatro partes: la simulación del canal a través de GNU radio, el análisis de los fenómenos del canal en el osciloscopio y en el analizador de espectros, y los efectos de los fenómenos del canal en la conversión de frecuencia. A través del uso del simulador GNU radio se pudo observar a través de los instrumentos de medición el comportamiento que presentaban las diferentes señales, y se concluyó de forma principal que al aplicar filtros se puede recuperar el mensaje de una señal, a pesar de la presencia de ruido.
 
-- ¿Cuál es el efecto de filtrar las frecuencias altas de una señal?
-- ¿Qué sucede al filtrar muy cerca de la frecuencia fundamental de la señal?
-- ¿Cuál es el efecto de filtrar las frecuencias bajas de una señal?
-- ¿Qué ocurre al eliminar armónicos de una señal?
-- ¿Qué efecto tiene la desviación de frecuencia en la señal recibida? ¿Qué efecto(s) produce el filtro cuando la señal recibida se ve afectada por desviación de frecuencia?
-- ¿Cómo cuantificar la degradación de la señal al aumentar los niveles de ruido?
-- ¿Cómo se puede mejorar la relación señal a ruido en una señal?
-- ¿Cómo podría cuantificar la calidad de la señal recibida? Considere el caso de señales analógicas y digitales.
+## INTRODUCCIÓN 
+Uno de los elementos más importantes en el proceso de las comunicaciones es el canal, debido a que es el medio por el cual se transmite el mensaje que se espera que llegue al receptor desde el emisor. Conocer las diferentes condiciones que pueden afectarlo es entonces fundamental para las comunicaciones. 
+El ruido que se genera al transmitir la señal a través del canal es prácticamente inevitable. Sin embargo, existen herramientas como los filtros de frecuencia que pueden permitir que el mensaje llegue con la menor cantidad de interferencia posible. La forma de aplicar estos filtros y como permiten recuperar la señal serán analizados en este informe, además de cómo se ve la señal del mensaje en los diferentes instrumentos de medición. 
+Se concluye de forma principal que el canal, aunque pueda presentar ciertas distorsiones al momento de transmitir la señal, esta puede ser recuperada a través de la aplicación de filtros, pasabaja y/o pasabanda, que permitan pasar la frecuencia del mensaje y disminuir el impacto de las demás interferencias.
+
+## PROCEDIMIENTO
+### Actividad 1: Actividades de simulación de canal en GNU Radio
+En primer lugar, se cargó el flowgraph propuesto para la práctica, el cual fue utilizado para hacer las simulaciones de la práctica. Se analizó la respuesta para diferentes tipos de señales, especialmente la del archivo .wav, la cual se da como se ve en la imagen: 
+
+<img src="imagenes/Imagen1.png"> 
+Figura 1. Respuesta en el tiempo para el archivo .wav
+
+Una vez hecho esto, se aplicaron los diferentes filtros requeridos (pasabaja y pasa alta), y con la señal en condiciones ideales no se observo un cambio siempre y cuando permitieran pasar la frecuencia del mensaje. Esto cambia una vez se añade ruido, ya que a través de estos filtros se permite que se pueda recuperar el mensaje de la señal si los filtros aplicados permiten pasar sólo la frecuencia del mensaje. Esto se puede ver de forma más clara en la siguiente imagen:
+
+<img src="imagenes/Imagen2.png"> 
+Figura 2. Respuesta de la señal en el tiempo, teniendo ruido
+
+Como se puede ver, a pesar de que la señal tenga ruido, el mensaje puede ser recuperado al aplicar filtros, aunque tenga una amplitud considerablemente más baja que el mensaje original.
 
 ---
 
-## Actividad 2: Fenómenos de canal en el osciloscopio
+### Actividad 2: Fenómenos de canal en el osciloscopio
+Para la segunda parte, se transmitieron diferentes señales generadas a través de GNU radio y se analizó el comportamiento de estas. En primer lugar, para la señal .wav, al añadir el filtro de pasa alta y pasa bajas, y un ruido de voltaje de 0.03, que se ve en el simulador como se ve en la imagen:
 
-- ¿Cuál es el efecto del ruido sobre la amplitud de las señales medidas en el osciloscopio? ¿Conservan las mismas relaciones que se evidencian en la simulación?
-- ¿La relación señal a ruido creada intencionalmente en el computador se amplifica o se reduce en la señal observada en el osciloscopio?
-- Demuestre ¿cómo se puede mejorar la relación señal a ruido en una señal?
-- ¿Cómo se evidencia el fenómeno de desviación de frecuencia en el osciloscopio? Evidenciar al menos con dos formas de onda.
-- Determine la afectación de un medio de transmisión coaxial (usar cables largos) sobre una señal periódica operando a las capacidades máximas de muestreo del USRP.
-  
-  
+<img src="imagenes/Imagen3.png"> 
+Figura 3. Señal generada para el osciloscopio con archivo .wav, ruido de 0.03 y filtros
+
+Se observó un comportamiento de esta forma en el osciloscopio:
+
+<img src="imagenes/Imagen4.png"> 
+Figura 4. Respuesta en el osciloscopio para el archivo .wav, con ruido de 0.03 y filtros
+
+Y para el segundo, que era una señal seno donde se presentaba un ruido de  voltaje de 0.03 y unos filtros de pasa baja y pasa alta para que sólo pasara las frecuencias muy cercanas al mensaje, con un comportamiento esperado de la siguiente forma:
+
+<img src="imagenes/Imagen5.png"> 
+Figura 5. Comportamiento esperado de la señal seno, con ruido de 0.03 y filtros
+
+Se obtuvo un resultado en el osciloscopio de la siguiente manera:
+
+<img src="imagenes/Imagen5.png"> 
+Figura 6. Resultado para la señal seno en el osciloscopio, con ruido de 0.03 y filtros
+
 - Usando cables coaxiales de diferentes longitudes, ¿cómo afecta la distancia entre el transmisor y el receptor a la amplitud de la señal medida?
 
   El largo del cable se generan atenuaciones y da paso a ruido.
 
-<img src="imagenes/coax_corto.jpg" alt="imagenes/coax_corto.jpg" width="400">  <img src="imagenes/coax_largo.jpg" alt="imagenes/coax_largo.jpg" width="400">
+<img src="imagenes/coax_corto.jpg" alt="imagenes/coax_corto.jpg" width="400">
+Figura 7. Señal con cable coaxial corto
+
+<img src="imagenes/coax_largo.jpg" alt="imagenes/coax_largo.jpg" width="400">
+Figura 8. Señal con cable coaxial largo
+
 
 - Usando antenas, ¿cómo afecta la distancia entre el transmisor y el receptor a la amplitud de la señal medida? ¿Es posible compensar el fenómeno?
 
   La distancia entre las antenas afecta directamente la amplitud de la señal, esto se demosytró en el laboratorio de manera un poco obvia ya que practicamente la distancia entre las antenas tuvo que ser nula para poder visualizar la señal.
 
 <img src="imagenes/antenas.jpg" alt="imagenes/antenas.jpg" width="400">
+Figura 9. Señal transmitida con antena
 
 - ¿Qué modelo de canal básico describe mejor las mediciones obtenidas en la práctica?
 
