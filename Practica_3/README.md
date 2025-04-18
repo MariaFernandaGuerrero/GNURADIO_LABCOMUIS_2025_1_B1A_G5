@@ -33,19 +33,22 @@ Respecto a la respuesta en frecuencia, pueden observarse la envolvente y las dos
 ## Primera parte
 Utilizando el código suministrado en GNU radio, se genera el bloque de modulador AM, y se realiza la en el osciloscopio de la señal cos(t) para los diferentes casos de ka*Am.  Para el primer caso, con ka*Am=1, se obtiene la siguiente respuesta:
 
-
-
+<img src="imagenes/ima1.jpg"> 
 Figura 1. Respuesta en el osciloscopio para señal coseno con ka*Am=1.
+
+
 Se observa que la respuesta en el osciloscopio es muy similar a la que se tendría si se conectara directamente la señal de entrada.
 Para el caso sobremodulado, con un ka*Am=1.5, se obtiene la siguiente respuesta en el osciloscopio
 
-
-
+<img src="imagenes/ima2.jpg"> 
 Figura 2. Respuesta en el osciloscopio para señal coseno con ka*Am=1.5
+
+
 En este caso, aunque los picos presentan el mismo comportamiento, los valles no tienen la respuesta que se esperaría, debido a que se elevan por encima de 0.
 Finalmente, para un índice menor a 1, se obtiene la siguiente respuesta
 
-
-
+<img src="imagenes/ima3.jpg"> 
 Figura 3. Respuesta en el osciloscopio para la señal coseno con ka*Am=0.5
+
+
 Se observa que, a pesar de que conserva el mismo comportamiento de la señal coseno, los valles no llegan hasta 0, que sería el valor esperado.
