@@ -94,24 +94,43 @@ Figura 9. Señal transmitida con antena
 ## Actividad 3: Fenómenos de canal en el analizador de espectro
 
 - ¿Cuál es el efecto del ruido sobre la respuesta en frecuencia de las señales medidas en el analizador de espectro? ¿Conservan las mismas relaciones que se evidencian en la simulación?
+
+El ruido ensucia la señal, hace que el espectro se vea más ancho o borroso, y a veces tapa detalles importantes. En la simulación se ve todo más limpio, pero en la vida real el ruido cambia bastante la forma de la señal.
+
 - ¿La relación señal a ruido creada intencionalmente desde el computador se amplifica o se reduce en la señal observada en el analizador de espectro?
-- Adjunte la evidencia de la medición de la relación señal a ruido de dos formas de onda distintas.
+
+Generalmente se reduce, porque en la transmisión real se suma más ruido del entorno y del equipo. No es tan ideal como en la simulación.
+
 - ¿Cómo se evidencia el fenómeno de desviación de frecuencia en el analizador de espectro? Evidenciar al menos con dos formas de onda.
+
+Se nota porque la señal se mueve de su frecuencia central. Si comparas dos formas de onda (como una señal sin modulación de frecuencia y otra con FM), en la FM verás que su espectro ocupa más ancho de banda o parece como “expandida”.
+
 - Determine la afectación de un medio de transmisión coaxial (usar cables largos) sobre una señal periódica operando a las capacidades máximas de muestreo del USRP.
   
+El cable largo debilita la señal y puede distorsionarla si la frecuencia es muy alta. También puede aparecer más ruido o ecos si el cable no está bien adaptado.
   
 - Usando cables coaxiales de diferentes longitudes, ¿cómo afecta la distancia entre el transmisor y el receptor a la amplitud de la señal medida?
-  
+
+A mayor distancia, menor amplitud. El cable atenúa la señal, especialmente si es largo o de baja calidad.
   
 - Usando antenas, ¿cómo afecta la distancia entre el transmisor y el receptor a la amplitud de la señal medida? ¿Es posible compensar el fenómeno?
-  
-  
-- ¿Qué modelo de canal básico describe mejor las mediciones obtenidas en la práctica?
-  
+
+Con antenas, al alejar el transmisor y el receptor, la señal se debilita bastante. Sí se puede compensar usando antenas mejores, amplificadores o ajustando la ganancia del sistema.
   
 ---
 
 ## Actividad 4: Efectos de los fenómenos de canal en la conversión de frecuencia
 
 - ¿Cómo se evidencian los diferentes fenómenos de canal en la señal recibida?
+  -La señal se ve más débil.
+  -Se llena de "ruido" o interferencia.
+  -A veces la señal se distorsiona o se corta.
+  -Puede llegar con ecos o desfase.
+  -En movimiento, la frecuencia puede cambiar un poco.
+  
 - ¿Cómo se pueden mitigar los efectos del canal en la señal recibida?
+  -Subir la potencia.
+  -Usar mejores antenas.
+  -Acercar los equipos.
+  -Evitar obstáculos.
+  -Usar filtros y corrección de errores.
