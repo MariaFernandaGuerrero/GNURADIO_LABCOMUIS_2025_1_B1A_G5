@@ -58,3 +58,4 @@ Figura 5. Respuesta en el osciloscopio para la señal coseno con ka*Am=0.5
 Figura 6. Respuesta en el analizador de espectro para la señal coseno con ka*Am=0.5
 
 
+En todos los casos se pudo observar que las señales observadas en el osciloscopio concuerdan con la modulación a la que se queria llegar.
