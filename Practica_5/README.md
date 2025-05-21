@@ -39,9 +39,27 @@ Modulación PAM:
 
 La modulación por amplitud de pulsos (PAM) se estudia al tomar una señal analógica y convertirla en un conjunto de muestras. El número de muestras a tomar por unidad de tiempo depende de la rapidez con que varíe la señal modulante, lo cual está relacionado con su ancho de banda. Para garantizar que las muestras sean representativas de la señal original, se establece una relación entre la frecuencia de muestreo y la frecuencia de la señal cuadrada, con un valor de relación de 100 (samp_rate/fs = 100). Esto permite asociar cada valor de retardo a un porcentaje del ciclo útil de la señal.
 
+A continuació se presentan algunos ejemplos con diferentes formas de onda:
+
+- Señal coseno
+<img src="coseno_impulso_10.png">
+
+- Señal seno
+<img src="senoidal_impulso_20.png">
+
+- Señal triangular
+<img src="triangular_impulso_10.png">
+
+- Señal cuadrada
+<img src="cuadrada_impulso_10.png">
+
 Multiplexado de Señales PAM:
 
 Se utiliza un flujograma para multiplexar cuatro señales moduladas PAM, ajustando el ancho de pulso y el retardo entre las señales para evitar la superposición. Para esto, se emplean bloques de "delay" en el flujo de señales, lo que permite establecer el tiempo necesario para que las señales no interfieran entre sí. Además, se inserta un canal de audio adicional para observar el comportamiento del sistema al multiplexar hasta cinco señales. La sincronización entre las señales se ajusta para garantizar que no haya solapamiento.
+
+
+
+### Conclusiones
 
 - El análisis de la modulación PAM muestra cómo las señales moduladas por pulsos pueden ser representadas en el dominio del tiempo y frecuencia. La clave para una modulación eficiente es el adecuado muestreo de la señal original, lo cual está relacionado con la frecuencia de muestreo.
 
