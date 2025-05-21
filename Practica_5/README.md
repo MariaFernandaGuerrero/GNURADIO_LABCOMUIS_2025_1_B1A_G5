@@ -57,7 +57,11 @@ Multiplexado de Señales PAM:
 
 Se utiliza un flujograma para multiplexar cuatro señales moduladas PAM, ajustando el ancho de pulso y el retardo entre las señales para evitar la superposición. Para esto, se emplean bloques de "delay" en el flujo de señales, lo que permite establecer el tiempo necesario para que las señales no interfieran entre sí. Además, se inserta un canal de audio adicional para observar el comportamiento del sistema al multiplexar hasta cinco señales. La sincronización entre las señales se ajusta para garantizar que no haya solapamiento.
 
+- Modulación con 4 canales
+<img src="modulacion_4_canales.png">
 
+- Modulación con audio
+<img src="modulacion_con_audio.png">
 
 ### Conclusiones
 
