@@ -24,6 +24,8 @@ Uso de IA: Se utilizó ChatGPT para reformular secciones del texto y verificar g
 ---
 ## Contenido
 
+## 4A
+
 ### Resumen
 En la práctica realizada se midieron las modulaciones angulares de múltiples señales de FM y PM. Para la primera parte se estudiaron las principales características de las emisoras radiales, presentes en el espectro radioeléctrico en el intervalo de las frecuencias entre 88 y 108 MHz, y realizando las mediciones requeridas en el analizador de espectros. Para la segunda parte, se usa una señal modulada en frecuencia y se determina su ancho de banda en función del índice de modulación (en los casos de banda estrecha y banda ancha), y se calculan los coeficientes de Bessel teóricos para la modulación PM y se comparan con los valores prácticos. Se concluye que las señales pueden ser moduladas a través de diferentes métodos, cada uno con características especiales.
 
@@ -50,6 +52,7 @@ Luego, se hallan y se comparan los valores de los coeficientes de Bessel teóric
 -	Aunque todas las emisoras tienen una respuesta en el dominio de la frecuencia, algunas no poseen la suficiente potencia como para cumplir con los parámetros esperados.
 -	La respuesta de la modulación de banda ancha es más fácil de apreciar a simple vista, aunque las amplitudes en voltaje se mantengan iguales.
 
+## 4B
 
 
 Volver al [INICIO](#laboratorio-de-comunicaciones)
