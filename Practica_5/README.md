@@ -23,6 +23,10 @@ Uso de IA: Se utilizó ChatGPT para reformular secciones del texto y verificar g
 ---
 ## Contenido
 
+## 5A
+
+## 5B
+
 ## Introducción
 En esta práctica, se explora el funcionamiento de dos tipos de cuantización: cuantización uniforme y cuantización Ley A, con el objetivo de entender cómo estos métodos afectan la calidad de la señal digitalizada y el ruido asociado. La cuantización uniforme distribuye de manera equitativa los niveles de cuantización a lo largo de toda la señal, mientras que la Ley A aplica una compresión logarítmica para mejorar la resolución en las señales de baja amplitud, donde el oído humano es más sensible.
 
