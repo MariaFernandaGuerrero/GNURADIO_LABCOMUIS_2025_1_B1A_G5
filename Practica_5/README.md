@@ -25,6 +25,28 @@ Uso de IA: Se utilizó ChatGPT para reformular secciones del texto y verificar g
 
 ## 5A
 
+### Introducción:
+
+La modulación por pulsos (PAM) es una técnica utilizada para transmitir señales analógicas mediante pulsos, la cual juega un papel importante en la transmisión digital de voz y video. El proceso de modulación permite que una señal analógica sea convertida en un conjunto de muestras, las cuales se utilizan para construir señales moduladas. En esta práctica, se analizan diferentes aspectos de la modulación PAM, como el ancho de pulso, el ciclo útil y la frecuencia de muestreo, y se estudian las relaciones entre estos parámetros y la fidelidad de la señal. Además, se realiza un ejercicio de multiplexado de señales PAM, utilizando bloques de retardo para evitar la superposición entre las señales.
+
+### Objetivo:
+
+El objetivo principal de esta práctica es analizar la modulación PAM en el dominio del tiempo y la frecuencia, observando las formas de onda de las señales, y establecer los parámetros necesarios para que la señal modulada se reproduzca fielmente. Además, se busca multiplexar múltiples señales moduladas PAM sin que se produzcan interferencias entre ellas.
+
+### Desarrollo:
+
+Modulación PAM:
+
+La modulación por amplitud de pulsos (PAM) se estudia al tomar una señal analógica y convertirla en un conjunto de muestras. El número de muestras a tomar por unidad de tiempo depende de la rapidez con que varíe la señal modulante, lo cual está relacionado con su ancho de banda. Para garantizar que las muestras sean representativas de la señal original, se establece una relación entre la frecuencia de muestreo y la frecuencia de la señal cuadrada, con un valor de relación de 100 (samp_rate/fs = 100). Esto permite asociar cada valor de retardo a un porcentaje del ciclo útil de la señal.
+
+Multiplexado de Señales PAM:
+
+Se utiliza un flujograma para multiplexar cuatro señales moduladas PAM, ajustando el ancho de pulso y el retardo entre las señales para evitar la superposición. Para esto, se emplean bloques de "delay" en el flujo de señales, lo que permite establecer el tiempo necesario para que las señales no interfieran entre sí. Además, se inserta un canal de audio adicional para observar el comportamiento del sistema al multiplexar hasta cinco señales. La sincronización entre las señales se ajusta para garantizar que no haya solapamiento.
+
+- El análisis de la modulación PAM muestra cómo las señales moduladas por pulsos pueden ser representadas en el dominio del tiempo y frecuencia. La clave para una modulación eficiente es el adecuado muestreo de la señal original, lo cual está relacionado con la frecuencia de muestreo.
+
+- En el multiplexado de señales PAM, es importante considerar los retards y la sincronización de las señales para evitar la superposición entre ellas. La configuración de los bloques de retardo fue fundamental para lograr la correcta multiplexación.
+
 ## 5B
 
 ## Introducción
